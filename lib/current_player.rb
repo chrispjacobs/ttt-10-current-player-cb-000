@@ -2,9 +2,9 @@
 def turn_count(board)
   counter = 1
     board.each do |turn|
-      if turn = "X"
+      if turn == "X"
         counter += 1
-      elsif turn = "O"
+      elsif turn == "O"
         counter += 1
       end
     end
@@ -12,9 +12,9 @@ def turn_count(board)
 end
 
 def current_player
-  if turn_count % 2 = 1
+  if turn_count % 2 == 1
     "X"
-  elsif turn_count % 2 = 0
+  elsif turn_count % 2 == 0
     "O"
   end
 end
