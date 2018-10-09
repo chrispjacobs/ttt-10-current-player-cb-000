@@ -12,7 +12,7 @@ def turn_count(board)
     return counter
 end
 
-def current_player
+def current_player(board)
   if turn_count(board) % 2 == 1
     "X"
   elsif turn_count(board) % 2 == 0
@@ -21,4 +21,4 @@ def current_player
 end
 
 puts "The current turn is #{turn_count(board)}."
-puts "The next player should be #{current_player}."
+puts "The next player should be #{current_player(board)}."
