@@ -20,4 +20,4 @@ def current_player
   end
 end
 
-puts "#{turn_count(board)}
+puts "#{turn_count(board)}"
