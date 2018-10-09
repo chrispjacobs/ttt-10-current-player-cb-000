@@ -1,7 +1,7 @@
 board = ["X", " ", " ", "O", " ", " ", " ", " ", " "]
 
 def turn_count(board)
-  counter = 1
+  counter = 0
     board.each do |turn|
       if turn == "X"
         counter += 1
@@ -20,4 +20,5 @@ def current_player
   end
 end
 
-puts "#{turn_count(board)}"
+puts "The current turn is #{turn_count(board)}."
+puts "The next player should be #{current_player}."
