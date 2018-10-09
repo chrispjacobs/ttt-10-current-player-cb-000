@@ -19,3 +19,5 @@ def current_player
     "O"
   end
 end
+
+puts "#{turn_count(board)}
